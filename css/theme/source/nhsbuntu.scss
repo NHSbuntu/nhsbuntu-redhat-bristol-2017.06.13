@@ -25,9 +25,9 @@ $mainColor: #DDD;
 $headingFont: 'Ubuntu', sans-serif;
 $headingColor: #EEE;
 $headingLetterSpacing: -0.0em;
-$headingTextShadow: none;
+$headingTextShadow: #000000;
 $backgroundColor: #FFFFFF;
-$linkColor: #3b759e;
+$linkColor: #b8c2dd;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: #134674;
 
@@ -38,7 +38,7 @@ $selectionBackgroundColor: #134674;
 
 // Background generator
 @mixin bodyBackground() {
-	@include radial-gradient( #005384, #007AC2 );
+	@include radial-gradient( #003a5b, #007AC2 );
 }
 
 
@@ -47,10 +47,15 @@ $selectionBackgroundColor: #134674;
 @import "../template/theme";
 // ---------------------------------------------
 
+// this section gets rid of the border and shadow on images
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255,255,255,0.0);
   border: 0px solid $mainColor;
-
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
 }
+
+$heading1Size: 3.0em;
+$heading2Size: 2.0em;
+$heading3Size: 1.5em;
+$heading4Size: 1.00em;
