@@ -24,12 +24,16 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				
+				<!-- title-slide -->
 				<section>
 					<img src="img/nhsbuntu_logo_white.svg.png" alt="NHSbuntu">
 					<h4>An operating system for the NHS</h4>
 				</section>
 
+				<!-- marcus-bio -->
 				<section>
+					<img src="img/marcus.jpg" width="200" alt="marcus.jpg">
 					<h3><a href="https://twitter.com/marcus_baw">@marcus_baw</a></h3>
 					<ul>
 						<h4>GP &amp; former Anaesthetist</h4>
@@ -39,28 +43,78 @@
 					</ul>
 				</section>
 				
-				<section>
-					<h1>What is NHSbuntu?</h1>
-
-				</section>
-				
-				<section>
-					<h1>What is Ubuntu?</h1>
-				</section>
-
-				<section>
-					<h1>What is Linux?</h1>
-					<h4>A free, open source UNIX based operating system</h4>
-					<h4>Released 1991 by Linus Torvalds, Finnish Computer Science student</h4>
-					<h4>Now running on 96.6% of the world’s top 1 million websites</h4>
-					<h4>It’s the operating system inside Android devices and Chromebook laptops</h4>
-					<h4>It’s used by the giants of the web including Amazon, Facebook and Google</h4>
-					<h4>Apple, Oracle, and IBM all use free UNIX variants</h4>
-				</section>
+				<!-- vertical-slides-set-WhatIsNHSbuntu? -->
+				<section class="what-is-NHSbuntu?">
+					<section>
+						<h2>What is NHSbuntu?</h2>
+						<br/>
+						<p>NHSbuntu takes <strong>plain Ubuntu</strong> and optimises it for the NHS</p>
+						<p><strong>unofficial:</strong> not directly affiliated to NHS or Canonical organisations</p>
+						<p><strong>removes</strong> packages the NHS doesn’t need</p>
+						<p><strong>adds</strong> packages the NHS needs, <strong>develops</strong> custom elements</p>
+						<p><strong>adds familiarity</strong> by configuring look &amp; feel, branding etc</p>
+						<p><strong>provides services</strong> around NHSbuntu - customisations, Disaster-recovery Live USB version, custom development.</p>
+					</section>
 					
-				<section>
-					<h1>What is Ubuntu?</h1>
+					<section>
+						<h2>What is Ubuntu?</h2>
+						<br/>
+						<p>Ubuntu is ‘Linux for Human Beings’</p>
+						<p>A more friendly wrapper around Linux</p>
+						<p>Backed by Canonical, who provide support services</p>
+						<p>The most popular Linux variant, with millions of deployments worldwide</p>
+						<p>We have taken Ubuntu and pre-configured it to work with the NHS’s most common needs and requirements.</p>
+					</section>
+	
+					<section>
+						<h2>What is Linux?</h2>
+						<br/>
+						<p>A free, open source UNIX based operating system</p>
+						<p>Released 1991 by Linus Torvalds, Finnish Computer Science student</p>
+						<p>Now running on 96.6% of the world’s top 1 million websites</p>
+						<p>It’s the operating system inside Android devices and Chromebook laptops</p>
+						<p>It’s used by the giants of the web including Amazon, Facebook and Google</p>
+						<p>Apple, Oracle, and IBM all use free UNIX variants</p>
+					</section>
+				</section><!-- class="what-is-NHSbuntu?" -->
+
+				<section class="wannacry">
+					<h2>No we did not do WannaCry ;-)</h2>
+					<br/>
+					<p>The May 12th worldwide cyberattack which hit NHS badly</p>
+					<p>Was well timed for us in terms of publicity</p>
+					<p>But we didn’t do it, honest guv BUT</p>
+					<p>NHSbuntu (as with all Linux) would not have been vulnerable</p>
+					<p>NHSbuntu in even low-volume use could have provided herd immunity</p>
+					<p>Linux is not proof against all malware, but its attack surface is smaller and it’s (arguably) harder to do real nasty stuff</p>
 				</section>
+
+
+				<section class="the-80%">
+					<section>
+						<h1><strong>80%</strong></h1>
+					</section>
+
+					<section class="basic-apps-demo">
+						<h4>demonstrating NHSmail, browser, office apps for the 80%</h4>
+						<video data-autoplay class="stretch" src="media/daily-use2.mp4"></video>
+					</section>
+				</section> <!-- class="the-80%" -->
+					
+							
+				<section class="tpp-demo-video">
+					<h4>seamless clinical applications demo: TPP SystmOne</h4>
+					<video data-autoplay class="stretch" src="media/tpp-seamless.mp4"></video>
+				</section>
+
+
+
+
+
+				<section class="installation-video">
+					<h4>installing NHSBuntu</h4>
+					<video data-autoplay class="stretch" src="media/install-nhsb.mp4"></video>
+				</section>				
 
 			</div>
 		</div>
@@ -73,6 +127,11 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
 
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },

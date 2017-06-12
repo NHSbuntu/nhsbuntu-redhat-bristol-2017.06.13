@@ -21,15 +21,22 @@
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Ubuntu', sans-serif;
-$mainColor: #DDD;
+$mainColor: #EEE;
 $headingFont: 'Ubuntu', sans-serif;
-$headingColor: #EEE;
+$headingColor: #CCC;
 $headingLetterSpacing: -0.0em;
 $headingTextShadow: #000000;
 $backgroundColor: #FFFFFF;
-$linkColor: #b8c2dd;
+$linkColor: #60b1e0;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: #134674;
+
+$mainFontSize: 30px;
+
+$heading1Size: 3.00em;
+$heading2Size: 2.00em;
+$heading3Size: 1.50em;
+$heading4Size: 1.00em;
 
 // Fix links so they are not cut off
 .reveal a {
@@ -40,8 +47,6 @@ $selectionBackgroundColor: #134674;
 @mixin bodyBackground() {
 	@include radial-gradient( #003a5b, #007AC2 );
 }
-
-
 
 // Theme template ------------------------------
 @import "../template/theme";
@@ -55,7 +60,3 @@ $selectionBackgroundColor: #134674;
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
 }
 
-$heading1Size: 3.0em;
-$heading2Size: 2.0em;
-$heading3Size: 1.5em;
-$heading4Size: 1.00em;
